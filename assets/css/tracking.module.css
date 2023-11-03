@@ -1,0 +1,82 @@
+/** @format */
+
+.tracking {
+  width: 100%;
+  min-height: 60vh;
+}
+
+.btn {
+  width: 20%;
+  height: 50px;
+  background-color: var(--btnColor);
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  margin-left: 2px;
+}
+
+.head button {
+  width: 20rem;
+  height: 4rem;
+  padding: 10px 20px;
+  text-transform: capitalize;
+}
+.head button:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.head button:last-child {
+  border-radius: 0 5px 5px 0;
+}
+/* .active {
+  background-color: var(--btnColor);
+  color: #fff;
+}
+.inActive {
+  border: 1px solid var(--btnColor);
+  background-color: #fff;
+  color: var(--btnColor);
+} */
+
+.tracked {
+  width: 95%;
+  height: auto;
+  display: flex;
+  /* background-color: rgb(130, 151, 255); */
+  /* color: #fff; */
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.tracked div {
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: start;
+  text-transform: uppercase;
+  /* gap: 2; */
+  border-bottom: 1px solid grey;
+  padding: 10px 10px;
+  margin: 2px 0;
+  font-size: 12px;
+  font-weight: 600;
+  /* box-shadow: 0.5px 0.5px 2px 0.5px rgba(74, 83, 255, 0.232); */
+}
+
+.tracked div span {
+  /* border: 1px solid red; */
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding-left: 5px;
+}
+
+.tracked span p,
+.tracked span small {
+  width: 50%;
+  padding: 5px 10px;
+}
+
+.hide {
+  display: none;
+}

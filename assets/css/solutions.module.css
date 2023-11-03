@@ -1,0 +1,18 @@
+.solutions {
+    background-image: url("/cargoTrain1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .one:hover .solutions {
+    background-image: url("/cargoTrain1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .two:hover .solutions {
+    background-image: url("/cargoTrain.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }

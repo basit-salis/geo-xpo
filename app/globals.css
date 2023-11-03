@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: red;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --main-blue: blue;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  font-family: "Century Gothic", Verdana, Geneva, Tahoma, sans-serif;
+  background: linear-gradient(
+    to right,
+    rgba(238, 254, 255, 0.066),
+    rgba(221, 254, 255, 0.066)
+  );
+  color: #9174005a;
+}
+/* hero styling */
+.hero {
+  background-image: linear-gradient(to bottom, #ffa319a7, #d2f7ff46),
+    url("/Truck.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Century Gothic", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* solutions */
+.solutions {
+  background-image: linear-gradient(to bottom, #ffa319a7, #38deff89),
+  url("/cargoPlane.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* custom general styling */
+
+.scroll__hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll__hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
+.padding-x {
+  @apply px-2 lg:px-5;
+}
+
+.bg__orange {
+  @apply text-cyan-900 bg-orange-600;
+}

@@ -1,0 +1,33 @@
+.row{
+    /* put rotating globe as bg */
+    background:linear-gradient(rgba(47, 47, 47, 0.812),rgba(1, 1, 24, 0.766)), url('../img//europe.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 5rem 10rem;
+    color: var(--white);
+
+}
+
+.row h1{
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+.row li{
+    color: var(--white);
+}
+
+.card_img img{
+    width: 100%;
+    height: 90%;
+}
+
+@media (max-width:428px){
+    .row{
+
+    padding: 5rem 3rem;
+
+}
+}
+
