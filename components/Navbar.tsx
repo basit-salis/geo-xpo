@@ -4,7 +4,7 @@ import Image from "next/image";
 import Icon from "@mdi/react";
 import { svgPath } from "@/constants";
 import menu from "@/public/menu-black.svg";
-import { CustomButton, Logo } from "@/components";
+import { Logo } from "@/components";
 import { navLinks } from "@/constants";
 import { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
@@ -77,7 +77,6 @@ const NavBar = () => {
           className={`${
             isOpen ? "flex -translate-x-50" : "hiddenn translate-x-full"
           } w-screen h-full flex transition duration-500 delay-200 font-light px-5 py-5 pb-5 flex-col gap-2 text-cyan-900 fixed right-0 bg-white overflow-y-auto overscroll-y-contain lg:flex-col lg:w-3/5`}>
-        
           <div className="h-52 flex pb-5 border-b-slate-200 border-b-2 lg:border-0 ">
             {/* main */}
             <div className="flex flex-col justify-end items-start">
@@ -98,68 +97,66 @@ const NavBar = () => {
             </span>
           </div>
 
-         <div className="w-full flex flex-col lg:flex-row ">
-           <div className="flex flex-col lg:w-1/2 lg:pl-10">
-            {/* transport */}
-            <span className="font-bold text-lg pt-5">
-              Transportation Services
-            </span>
-            {navLinks[0].transport.map((link) => (
-              <Link
-                className="cursor-pointer py-1"
-                href={link.url}
-                key={link.title}>
-                {link.title}
-              </Link>
-            ))}
-            {/* supplyChain */}
-            <span className="font-bold text-lg pt-5">
-              Supply Chain & Logistics
-            </span>
-            {navLinks[0].supplyChain.map((link) => (
-              <Link
-                className="cursor-pointer py-1"
-                href={link.url}
-                key={link.title}>
-                {link.title}
-              </Link>
-            ))}
+          <div className="w-full flex flex-col lg:flex-row ">
+            <div className="flex flex-col lg:w-1/2 lg:pl-10">
+              {/* transport */}
+              <span className="font-bold text-lg pt-5">
+                Transportation Services
+              </span>
+              {navLinks[0].transport.map((link) => (
+                <Link
+                  className="cursor-pointer py-1"
+                  href={link.url}
+                  key={link.title}>
+                  {link.title}
+                </Link>
+              ))}
+              {/* supplyChain */}
+              <span className="font-bold text-lg pt-5">
+                Supply Chain & Logistics
+              </span>
+              {navLinks[0].supplyChain.map((link) => (
+                <Link
+                  className="cursor-pointer py-1"
+                  href={link.url}
+                  key={link.title}>
+                  {link.title}
+                </Link>
+              ))}
+            </div>
+
+            <div className="flex flex-col lg:w-1/2 lg:pl-10">
+              {/* digitalSolutions */}
+              <span className="font-bold pt-5">Digital solutions</span>
+              {navLinks[0].digitalSolutions.map((link) => (
+                <Link
+                  className="cursor-pointer py-1"
+                  href={link.url}
+                  key={link.title}>
+                  {link.title}
+                </Link>
+              ))}
+
+              <ul className="flex flex-col pt-10">
+                <li className="flex gap-5 py-2 text-xl font-normal">
+                  <Icon path={svgPath.menuPath} size={"25px"} /> Contact us
+                </li>
+                <li className="flex gap-5 py-2 text-xl font-normal">
+                  <Icon path={svgPath.menuPath} size={"25px"} /> Local offcies &
+                  info
+                </li>{" "}
+                <li className="flex gap-5 py-2 text-xl font-normal">
+                  <Icon path={""} size={"25px"} /> Insight
+                </li>{" "}
+                <li className="flex gap-5 py-2 text-xl font-normal">
+                  <Icon path={svgPath.menuPath} size={"25px"} /> Sustainability
+                </li>{" "}
+                <li className="flex gap-5 py-2 text-xl font-normal">
+                  <Icon path={svgPath.menuPath} size={"25px"} /> Career
+                </li>{" "}
+              </ul>
+            </div>
           </div>
-
-          <div className="flex flex-col lg:w-1/2 lg:pl-10">
-            {/* digitalSolutions */}
-            <span className="font-bold pt-5">Digital solutions</span>
-            {navLinks[0].digitalSolutions.map((link) => (
-              <Link
-                className="cursor-pointer py-1"
-                href={link.url}
-                key={link.title}>
-                {link.title}
-              </Link>
-            ))}
-
-            <ul className="flex flex-col pt-10">
-              <li className="flex gap-5 py-2 text-xl font-normal">
-                <Icon path={svgPath.menuPath} size={"25px"} /> Contact us
-              </li>
-              <li className="flex gap-5 py-2 text-xl font-normal">
-                <Icon path={svgPath.menuPath} size={"25px"} /> Local offcies &
-                info
-              </li>{" "}
-              <li className="flex gap-5 py-2 text-xl font-normal">
-                <Icon path={""} size={"25px"} /> Insight
-              </li>{" "}
-              <li className="flex gap-5 py-2 text-xl font-normal">
-                <Icon path={svgPath.menuPath} size={"25px"} /> Sustainability
-              </li>{" "}
-              <li className="flex gap-5 py-2 text-xl font-normal">
-                <Icon path={svgPath.menuPath} size={"25px"} /> Career
-              </li>{" "}
-            
-            </ul>
-          </div>
-         </div>
-
         </div>
       </nav>
     </header>
