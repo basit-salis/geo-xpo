@@ -4,7 +4,7 @@ import Image from "next/image";
 import Icon from "@mdi/react";
 import { svgPath } from "@/constants";
 import menu from "@/public/menu-black.svg";
-import { CustomButton, Logo } from "@/components";
+import { Logo } from "@/components";
 import { navLinks } from "@/constants";
 import { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
